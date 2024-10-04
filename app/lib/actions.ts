@@ -87,12 +87,12 @@ export async function updateInvoice(
         status: formData.get('status'),
     });
 
-    if (!validatedFields.success) {
-        return {
-            errors: validatedFields.error.flatten().fieldErrors,
-            message: 'Missing Fields. Failed to Update Invoice.',
-        };
-    }
+    // if (!validatedFields.success) {
+    //     return {
+    //         errors: validatedFields.error.flatten().fieldErrors,
+    //         message: 'Missing Fields. Failed to Update Invoice.',
+    //     };
+    // }
 
 
     // If form validation fails, return errors early. Otherwise, continue.
